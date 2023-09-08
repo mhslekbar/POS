@@ -1,0 +1,97 @@
+:root {
+  --mainColor: #2563eb;
+  --greenColor: #20bf6b;
+  --redColor: #eb3b5a;
+}
+
+.bg-main {
+  background-color: var(--mainColor) !important;
+  color: #FFF !important;
+}
+.btn-main {
+  background-color: var(--mainColor) !important;
+  color: #FFF !important;
+  border-color: var(--mainColor);
+}
+
+/* START SideBar */
+.jnOIPs {
+  width: 200px !important;
+  min-width: 200px !important;
+}
+.ActiveNav div, .sc-gUrTyy:hover {
+  /* .sc-gUrTyy { */
+  background-color: #FFF !important;
+  color: var(--mainColor) !important;
+  width: 120%;
+}
+/* END SideBar */
+
+.text-green {
+  color: var(--greenColor)
+}
+.bg-green {
+  background-color: var(--greenColor);
+  color: #FFF;
+}
+.btn-green, .btn-green:hover, .btn-green:focus {
+  background-color: var(--greenColor);
+  color: #FFF;
+  border: var(--greenColor);
+}
+
+.text-red {
+  color: var(--redColor)
+}
+.bg-red {
+  background-color: var(--redColor);
+  color: #FFF;
+  border: var(--redColor);
+}
+.btn-red, .btn-red:hover, .btn-red:focus {
+  background-color: var(--redColor);
+  color: #FFF;
+  border: var(--redColor);
+}
+
+.bg-gris {
+  background-color: #F0F5F3;
+}
+
+/* START Success Msg */
+.fade-out {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+.fade-out:not(.show) {
+  opacity: 0;
+}
+/* END Success Msg */
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* START Sales */
+.productNotAvailable {
+ /* background-color: #a6a6a6; */
+ background-color: #DDD;
+ opacity: .7;
+}
+.productNotAvailable p {
+  color: #000;
+  opacity: .7;
+}
+.productNotAvailable section:nth-child(3) {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* END Sales */
+
+
+.listClient {
+  position: relative;
+  z-index: 9;
+}

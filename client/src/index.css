@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-icon {
+    @apply w-6 h-6 cursor-pointer;
+  }
+  .nav-icon {
+    @apply w-6 h-6 cursor-pointer;
+  }
+  .invest-icon {
+    @apply w-6 h-6 stroke-gray-600;
+  }
+}
+
+@layer utilities {
+  body, input, button {
+    text-transform: uppercase;
+  }
+  body { 
+    background-color: #f1f2f6;
+  }
+  .bg-blue-600 {
+    background-color: #9c88ff;
+    color: #FFF;
+  }
+  .border-r-blue-600 {
+    border-color: #9c88ff;
+  }
+  .border-main {
+    border-color: #cdc6f0;
+  }
+  .text-blue-600 {
+    color: #9c88ff;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .invoice,
+  .invoice * {
+    visibility: visible;
+  }
+  .invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
